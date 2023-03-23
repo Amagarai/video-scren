@@ -1,0 +1,23 @@
+{
+  "name": "Ma Capture Vidéo",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "Extension Chrome pour capturer une vidéo de l'écran.",
+  "permissions": [
+    "desktopCapture",
+    "videoCapture"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "cam.svg",
+      "32": "cam.svg",
+      "48": "cam.svg",
+      "128": "cam.svg"
+    }
+  },
+  "service_worker": {
+    "script": "background.js",
+    "persistent": false
+  }
+}
